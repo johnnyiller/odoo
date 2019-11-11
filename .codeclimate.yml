@@ -1,5 +1,5 @@
 ---
-engines:
+plugins:
   duplication:
     enabled: true
     config:
@@ -15,12 +15,7 @@ engines:
     enabled: true
   bandit:
     enabled: true
-ratings:
-  paths:
-  - "**.inc"
-  - "**.module"
-  - "**.py"
-exclude_paths:
+exclude_patterns:
 - debian/
 - doc/
 - setup/
